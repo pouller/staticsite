@@ -1,0 +1,20 @@
+<html>
+<!-- jQuery. Including jQuery from CDN, and changing the content -->
+	<head>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+		<script>
+		$(document).ready(function(){
+			$("#btn").click(function(){
+				$("#test").html("<b>We changed it!</b>");
+			});
+		});
+		</script>
+	</head>
+	
+	<body>
+		<p id="test">This is text we will change.</p>
+		<button id="btn">Set new HTML</button>
+	</body>
+	
+</html>
