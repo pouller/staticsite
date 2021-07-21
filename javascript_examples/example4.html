@@ -1,0 +1,15 @@
+<html>
+<!-- Example of DOM navigation. Setting unload (beforeunload)event handler. To work, you must work (at least click) on the page before closing -->
+	<head>
+		<script>
+			function sayGoodbye(){
+				return "";
+			}
+		</script>
+	</head>
+	
+	<body onbeforeunload="return sayGoodbye()">
+		<h1>Welcome to My Web Page!</h1>
+	</body>
+	
+</html>

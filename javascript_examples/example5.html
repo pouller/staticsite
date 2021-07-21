@@ -1,0 +1,20 @@
+<html>
+<!-- Example of DOM navigation. Using the preventDefault() method -->
+	<head>
+		<script type="text/javascript">
+			addEventListener("load",function(){
+				var link= document.getElementById("google");
+				link.addEventListener("click",function(e){
+				e.preventDefault(); //prevent event action
+				console.log("We prevented the user from following the link!");
+			})
+		});
+		</script>
+	</head>
+	
+	<body onbeforeunload="return sayGoodbye()">
+		<h1>Welcome to My Web Page!</h1>
+		<a href=http://www.google.com id="google">Google</a>
+	</body>
+	
+</html>

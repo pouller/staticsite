@@ -1,0 +1,18 @@
+<html>
+<!-- Example of DOM navigation. Setting event handler -->
+	<head>
+	</head>
+	
+	<body>
+		<script>
+			function getCoords(event){
+				var x=event.clientX;
+				var y=event.clientY;
+				alert("X: " + x + ", Y: " + y);
+			}
+		</script>
+		<p onmousedown="getCoords(event)">Click anywhere on this sentence to see the x and y coordinates of the mouse. Clear the alert and try again to see the numbers change.</p>
+	</body>
+	
+	
+</html>

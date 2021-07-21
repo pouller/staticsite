@@ -1,0 +1,27 @@
+<html>
+<!-- Example of DOM navigation. Using Geolocation API -->
+	<head>
+	</head>
+	
+	<body onbeforeunload="return sayGoodbye()">
+		<h1>Welcome to My Web Page!</h1>
+		<p id="text">Where am I?</p>
+		<button onclick="getLocation()">Find Me</button>
+		<script>
+			var response=document.getElementById("text");
+			
+			function getLocation(){
+				if (navigator.geolocation){
+					navigator.geolocation.getCurrentPosition(position);
+				}
+				else {response.innerHTML="Geolocation is not available from this device or browser.";}
+			}
+			
+			function position(loc){
+				response.innerHTML="Latitude: " + loc.coords.latitude +
+				"<br>Longitude: " + loc.coords.longitude;
+			}
+		</script>
+	</body>
+	
+</html>

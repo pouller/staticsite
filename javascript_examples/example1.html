@@ -1,0 +1,20 @@
+<html>
+<!-- Example of DOM navigation. Using getElementsByTagName method -->
+	<head>
+	</head>
+	
+	<body>
+		<div id="output"></div>
+		<input type="text" size="20"><br>
+		<input type="text" size="20"><br>
+		<input type="text" size="20"><br><br>
+		<input type="button" value="Submit Form">
+
+		<script>
+			var x=document.getElementsByTagName("input");
+			document.getElementById("output").innerHTML = ("Number of elements: "+x.length);
+		</script>	
+	</body>
+	
+	
+</html>

@@ -1,0 +1,29 @@
+<html>
+<!-- Example of DOM navigation. Using getElementsByTagName method and referencing input elements inside form2 element -->
+	<head>
+	</head>
+	
+	<body>
+		<div id="output"></div>
+		<form id="form1">
+			<input type="text" size="20"><br>
+			<input type="text" size="20"><br>
+			<input type="text" size="20"><br><br>
+			<input type="button" value="Submit Form">
+		</form>
+		<form id="form2">
+			<input type="text" size="20"><br>
+			<input type="text" size="20"><br>
+			<input type="text" size="20"><br><br>
+			<input type="button" value="Submit Form">
+		</form>
+		
+		<script>
+			var x=document.getElementsByTagName("input");
+			document.getElementById("output").innerHTML = 
+			("Number of elements: "+x.length+"</br>Number in form2: "+form2.getElementsByTagName("input").length);
+		</script>		
+	</body>
+	
+	
+</html>
